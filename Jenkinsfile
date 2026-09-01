@@ -12,7 +12,7 @@ stages {
             echo 'Cloning project from GitHub...'
 
             git branch: 'main',
-                url: 'YOUR_GITHUB_REPOSITORY_URL'
+                url: 'https://github.com/suryajeet055/Jenkins-CICD-Web-App.git'
         }
     }
 
@@ -51,6 +51,7 @@ stages {
 }
 
 post {
+
     success {
         echo 'Pipeline finished successfully!'
     }
