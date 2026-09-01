@@ -4,21 +4,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jenkins CI/CD Web Application</title>
-    <link rel="stylesheet" href="style.css">
+
+```
+<title>Jenkins CI/CD Web App</title>
+
+<link rel="stylesheet" href="style.css">
+```
+
 </head>
 
 <body>
 
-<div class="container">
-    <h1>Welcome to Jenkins CI/CD Pipeline</h1>
-    <p>This website is automatically deployed using Jenkins.</p>
+```
+<header>
+    <div class="logo">
+        CI/CD Pipeline
+    </div>
 
-    <button onclick="showMessage()">Click Me</button>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#status">Status</a>
+    </nav>
+</header>
 
-    <p id="message"></p>
-</div>
+
+<main id="home">
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="badge">AUTOMATED DEPLOYMENT</span>
+
+            <h1>
+                Build Faster.<br>
+                Deploy Smarter.
+            </h1>
+
+            <p>
+                A simple web application demonstrating Continuous Integration
+                and Continuous Deployment using Jenkins and GitHub.
+            </p>
+
+            <button id="deployBtn">
+                Check Pipeline Status
+            </button>
+
+            <p id="message"></p>
+
+        </div>
+
+
+        <div class="pipeline-card">
+
+            <h2>CI/CD Pipeline</h2>
+
+            <div class="pipeline-step">
+                <span>1</span>
+                <p>GitHub</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="pipeline-step">
+                <span>2</span>
+                <p>Checkout</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="pipeline-step">
+                <span>3</span>
+                <p>Build</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="pipeline-step">
+                <span>4</span>
+                <p>Test</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="pipeline-step active">
+                <span>5</span>
+                <p>Deploy</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="features" id="features">
+
+        <div class="section-title">
+            <h2>Pipeline Features</h2>
+            <p>Automation that makes software delivery faster and more reliable.</p>
+        </div>
+
+
+        <div class="feature-container">
+
+            <div class="feature-card">
+                <div class="icon">⚡</div>
+                <h3>Continuous Integration</h3>
+                <p>
+                    Automatically integrates and validates code changes
+                    from the GitHub repository.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="icon">🧪</div>
+                <h3>Automated Testing</h3>
+                <p>
+                    Verifies project files and ensures the application
+                    is ready for deployment.
+                </p>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="icon">🚀</div>
+                <h3>Continuous Deployment</h3>
+                <p>
+                    Automatically deploys the latest version after
+                    successful pipeline execution.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="status" id="status">
+
+        <div class="status-card">
+
+            <div class="status-indicator"></div>
+
+            <div>
+                <h2>Pipeline Status</h2>
+                <p id="statusText">System Ready for Deployment</p>
+            </div>
+
+            <div class="status-time">
+                <span>Last Checked</span>
+                <strong id="time">--:--:--</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+    <p>
+        Jenkins CI/CD Web Application | Experiment No. 6
+    </p>
+</footer>
+
 
 <script src="script.js"></script>
+```
+
 </body>
 </html>
