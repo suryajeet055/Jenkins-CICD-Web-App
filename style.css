@@ -1,25 +1,328 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
 body {
-font-family: Arial, sans-serif;
-background: #f4f4f4;
-text-align: center;
-padding-top: 100px;
+font-family: Arial, Helvetica, sans-serif;
+background: #f5f7fb;
+color: #1f2937;
 }
 
-.container {
-background: white;
-padding: 40px;
-width: 500px;
-margin: auto;
-border-radius: 10px;
-box-shadow: 0px 0px 10px gray;
+/* Header */
+
+header {
+width: 100%;
+padding: 20px 8%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+background: #ffffff;
+box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
 }
 
-h1 {
-color: #333;
+.logo {
+font-size: 24px;
+font-weight: bold;
+color: #2563eb;
+}
+
+nav {
+display: flex;
+gap: 30px;
+}
+
+nav a {
+text-decoration: none;
+color: #374151;
+font-weight: 500;
+transition: 0.3s;
+}
+
+nav a:hover {
+color: #2563eb;
+}
+
+/* Hero Section */
+
+.hero {
+min-height: 550px;
+padding: 80px 10%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 70px;
+}
+
+.hero-content {
+max-width: 550px;
+}
+
+.badge {
+display: inline-block;
+padding: 8px 15px;
+border-radius: 20px;
+background: #dbeafe;
+color: #2563eb;
+font-size: 12px;
+font-weight: bold;
+letter-spacing: 1px;
+margin-bottom: 20px;
+}
+
+.hero h1 {
+font-size: 55px;
+line-height: 1.1;
+margin-bottom: 25px;
+color: #111827;
+}
+
+.hero p {
+font-size: 18px;
+line-height: 1.7;
+color: #6b7280;
+margin-bottom: 25px;
 }
 
 button {
-padding: 10px 20px;
+padding: 14px 25px;
+border: none;
+border-radius: 8px;
+background: #2563eb;
+color: white;
 font-size: 16px;
+font-weight: bold;
 cursor: pointer;
+transition: 0.3s;
+}
+
+button:hover {
+background: #1d4ed8;
+transform: translateY(-2px);
+}
+
+#message {
+margin-top: 20px;
+font-weight: bold;
+color: #16a34a;
+}
+
+/* Pipeline Card */
+
+.pipeline-card {
+width: 330px;
+padding: 30px;
+background: white;
+border-radius: 15px;
+box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.pipeline-card h2 {
+text-align: center;
+margin-bottom: 25px;
+color: #111827;
+}
+
+.pipeline-step {
+display: flex;
+align-items: center;
+gap: 15px;
+}
+
+.pipeline-step span {
+width: 35px;
+height: 35px;
+border-radius: 50%;
+background: #e5e7eb;
+display: flex;
+justify-content: center;
+align-items: center;
+font-weight: bold;
+}
+
+.pipeline-step p {
+font-weight: 600;
+margin: 0;
+color: #374151;
+}
+
+.pipeline-step.active span {
+background: #16a34a;
+color: white;
+}
+
+.line {
+width: 2px;
+height: 25px;
+background: #d1d5db;
+margin-left: 16px;
+}
+
+/* Features */
+
+.features {
+padding: 80px 10%;
+background: white;
+}
+
+.section-title {
+text-align: center;
+margin-bottom: 50px;
+}
+
+.section-title h2 {
+font-size: 36px;
+margin-bottom: 15px;
+}
+
+.section-title p {
+color: #6b7280;
+}
+
+.feature-container {
+display: flex;
+justify-content: center;
+gap: 30px;
+}
+
+.feature-card {
+width: 300px;
+padding: 30px;
+border-radius: 15px;
+background: #f8fafc;
+text-align: center;
+transition: 0.3s;
+}
+
+.feature-card:hover {
+transform: translateY(-8px);
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+font-size: 40px;
+margin-bottom: 20px;
+}
+
+.feature-card h3 {
+margin-bottom: 15px;
+}
+
+.feature-card p {
+color: #6b7280;
+line-height: 1.6;
+}
+
+/* Status Section */
+
+.status {
+padding: 80px 10%;
+}
+
+.status-card {
+max-width: 900px;
+margin: auto;
+padding: 30px;
+border-radius: 15px;
+background: white;
+display: flex;
+align-items: center;
+gap: 20px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.status-indicator {
+width: 18px;
+height: 18px;
+background: #22c55e;
+border-radius: 50%;
+}
+
+.status-card h2 {
+margin-bottom: 8px;
+}
+
+.status-card p {
+color: #16a34a;
+}
+
+.status-time {
+margin-left: auto;
+text-align: right;
+}
+
+.status-time span {
+display: block;
+font-size: 13px;
+color: #6b7280;
+margin-bottom: 5px;
+}
+
+/* Footer */
+
+footer {
+text-align: center;
+padding: 25px;
+background: #111827;
+color: white;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+
+```
+header {
+    padding: 20px 5%;
+}
+
+.hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 70px 5%;
+}
+
+.hero h1 {
+    font-size: 42px;
+}
+
+.feature-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+.status-card {
+    flex-direction: column;
+    text-align: center;
+}
+
+.status-time {
+    margin-left: 0;
+    text-align: center;
+}
+```
+
+}
+
+@media (max-width: 600px) {
+
+```
+nav {
+    display: none;
+}
+
+.hero h1 {
+    font-size: 35px;
+}
+
+.pipeline-card {
+    width: 100%;
+}
+```
+
 }
